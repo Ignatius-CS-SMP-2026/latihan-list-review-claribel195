@@ -1,5 +1,5 @@
-# NAMA  : 
-# KELAS : 
+# NAMA  : Claribel Madeline Effendy
+# KELAS : 9A
 # ---------------------------------------------------------
 # LATIHAN: REVIEW LIST PYTHON
 #Diberikan sebuah data acak nilai ujian siswa. Buatlah program yang mengurutkan data tersebut 
@@ -16,3 +16,16 @@
 # ---------------------------------------------------------
 
 # Tulis kodemu di bawah ini:
+nilai_ujian = [75, 55, 90, 85, 45, 95, 80]
+
+nilai_ujian.sort(reverse=True)
+print("Data dari nilai tertinggi ke terendah : ", nilai_ujian)
+
+penerima_beasiswa = nilai_ujian[:3]
+print("Penerima beasiswa :", penerima_beasiswa)
+
+nilai_lulus = []
+for nilai in nilai_ujian:
+    if nilai >= 60:
+        nilai_lulus.append(nilai)
+print("Nilai yang lulus :", nilai_lulus)
